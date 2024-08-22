@@ -1,6 +1,6 @@
 // arrays.test.js
 
-const { arr1, arr2, arr3, arr4 } = require('./exerciseArrayBasics');
+const { arr1, arr2, arr3, arr4 } = require('../exerciseArrayBasics');
 
 describe('Array-Initialisierungen', () => {
 
