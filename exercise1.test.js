@@ -1,12 +1,12 @@
-// exercises.test.js
+// exercise1.test.js
 const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
 // Helper function to execute the student's code and capture the output
-const runExercises = () => {
+const runExercise1 = () => {
   return new Promise((resolve, reject) => {
-    exec(`node ${path.join(__dirname, 'exercises.js')}`, (error, stdout, stderr) => {
+    exec(`node ${path.join(__dirname, 'exercise1.js')}`, (error, stdout, stderr) => {
       if (error) {
         reject(stderr);
       } else {
@@ -16,7 +16,7 @@ const runExercises = () => {
   });
 };
 
-describe('exercises', () => {
+describe('exercise1', () => {
   let spyReverse;
 
   beforeAll(() => {
@@ -30,7 +30,7 @@ describe('exercises', () => {
   });
 
   it('should use the .reverse() method on the array', async () => {
-    await runExercises();
+    await runExercise1();
 
     // Check if the .reverse() method was called
     expect(spyReverse).toHaveBeenCalled();
@@ -38,7 +38,7 @@ describe('exercises', () => {
   });
 
   it('should not use any other array methods', async () => {
-    await runExercises();
+    await runExercise1();
 
     // Check that no other methods like .sort() are used
     const spySort = jest.spyOn(Array.prototype, 'sort');
