@@ -1,5 +1,5 @@
 // exercise1.test.js
-const reverseArray = require('../exercise1');
+const reverseArray = require('../exerciseReverse');
 
 describe('reverseArray function', () => {
   let spyReverse;
