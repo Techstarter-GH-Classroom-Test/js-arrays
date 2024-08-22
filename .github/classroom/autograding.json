@@ -3,7 +3,7 @@
       {
         "name": "Test Übung 1",
         "setup": "",
-        "run": "jest exercise1.test.js",
+        "run": "jest exerciseArrayBasics.test.js",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -13,7 +13,7 @@
       {
         "name": "Test Übung 2",
         "setup": "",
-        "run": "jest exercise2.test.js",
+        "run": "jest exerciseReverse.test.js",
         "input": "",
         "output": "",
         "comparison": "included",
