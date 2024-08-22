@@ -1,13 +1,7 @@
-//Tausche die ___ mit dem korrekten Code:
-//Lösungen löschen bevor Aufgabe gestellt wird!
+// exercises.js
+const numbers = [1, 2, 3, 4, 5];
+numbers.reverse(); // -> reverse array order
+console.log(numbers); // [5, 4, 3, 2, 1]
 
-// Aufgabe 1:  Deklariere eine Variable 'x' und weise den Wert 5 zu
-// ___ = ___
-
-// Beispiel:
-// let x = 5;
-// let y = 6;
-
-// Variablen die getestet werden sollten müssen wieder exportiert werden!
-// Beispiel:
-// module.exports= {x,y};
+numbers.reverse();
+console.log(numbers); // [1, 2, 3, 4, 5]
